@@ -46,9 +46,9 @@
 			<div class="header-top">
 				<nav class="nav" id="nav-menu">
 					<ul class="nav__list">
-						<li class="nav__item"><a href="dostavka.html" class="nav__link">Доставка</a></li>
-						<li class="nav__item"><a href="oplata.html" class="nav__link">Оплата</a></li>
-						<li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+						<li><a href="dostavka.html">Доставка</a></li>
+						<li><a href="oplata.html">Оплата</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
 					</ul>
 					<div class="nav__close" id="nav-close">
 						<i class="icomoon icon-remove"></i>
@@ -81,8 +81,37 @@
 		<li><a href="catalog.html">Трубы</a></li>
 		<li><a href="catalog.html">Сваи</a></li>
 		<li><a href="catalog.html">Метизы</a></li>
-		<li><a href="catalog.html">Попутная продукция</a></li>
-		<li><a href="catalog.html">Фасон</a></li>
+		<li>
+			<a href="catalog.html">Попутная продукция<i class="icomoon icon-chevron-down"></i></a>
+			<ul class="header__cats-dropdown">
+				<li><a href="#">Склад металла</a></li>
+				<li><a href="#">Цех подготовки полуфабрикатов</a></li>
+				<li><a href="#">Цех металлоконструкций</a></li>
+				<li>
+					<a href="#">Цех маляро-погрузки<i class="icomoon icon-chevron-down"></i></a>
+					<ul class="header__cats-dropdown-second">
+						<li><a href="#">Погрузка</a></li>
+						<li><a href="#">Маляро-погрузки</a></li>
+						<li><a href="#">Цены</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Металлообработка<i class="icomoon icon-chevron-down"></i></a>
+					<ul class="header__cats-dropdown-second">
+						<li><a href="#">Погрузка</a></li>
+						<li><a href="#">Маляро-погрузки</a></li>
+						<li><a href="#">Цены</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="catalog.html">Фасон<i class="icomoon icon-chevron-down"></i></a>
+			<ul class="header__cats-dropdown">
+				<li><a href="#">Цех подготовки полуфабрикатов</a></li>
+				<li><a href="#">Цех металлоконструкций</a></li>
+			</ul>
+		</li>
 		<li><a href="catalog.html">Сорт</a></li>
 		<li><a href="catalog.html">Сыпучие продукты и удобрения</a></li>
 		<li><a href="catalog.html">Фанера</a></li>
@@ -202,6 +231,69 @@
     </div>
   </div>
 </footer>
+
+    <!--------Modal-------->
+
+	<div class="modal" id="added">
+		<div class="modal-title">Товар был успешно добавлен в вашу корзину</div>
+		<div class="modal-btns">
+			<a href="cart.html" class="btn">Просмотреть корзину</a>
+			<div class="modal-close" data-fancybox-close>Продолжить покупки</div>
+		</div>
+	</div>
+	
+	<div class="modal" id="login">
+		<div class="modal-title">Вход</div>
+		<form action="" method="get" class="form" id="formLogin">
+			<div class="form-group">
+				<div class="form-group-title">Email</div>
+				<label for="" class="form-label">
+					<input type="email" name="email" class="form-input" placeholder="Введите ваш Email" required>
+				</label>
+			</div>
+			<div class="form-group">
+				<div class="form-group-title">Пароль</div>
+				<label for="" class="form-label">
+					<input type="password" name="password" class="form-input" placeholder="Введите ваш пароль" required>
+				</label>
+				<a href="#" class="link">Забыл пароль</a>
+			</div>
+			<button class="btn" type="submit">Войти</button>
+			<a class="modal-link" data-fancybox href="#registr">Регистрация</a>
+		</form>
+	</div>
+	
+	<div class="modal" id="registr">
+		<div class="modal-title">Регистрация</div>
+		<form action="" method="get" class="form" id="formRegistr">
+			<div class="form-group">
+				<div class="form-group-title">Ваше имя</div>
+				<label for="" class="form-label">
+					<input type="text" name="name" class="form-input" placeholder="Введите ваше имя" required>
+				</label>
+			</div>
+			<div class="form-group">
+				<div class="form-group-title">Email</div>
+				<label for="" class="form-label">
+					<input type="email" name="email" class="form-input" placeholder="Введите ваш Email" required>
+				</label>
+			</div>
+			<div class="form-group">
+				<div class="form-group-title">Пароль</div>
+				<label for="" class="form-label">
+					<input type="password" name="password" class="form-input" placeholder="Введите ваш пароль" required>
+				</label>
+			</div>
+			<div class="form-group">
+				<div class="form-group-title">Повторите пароль</div>
+				<label for="" class="form-label">
+					<input type="password" name="passwordRepeat" class="form-input" placeholder="Повторите ваш пароль" required>
+				</label>
+			</div>
+			<button class="btn" type="submit">Зарегистрироваться</button>
+			<a class="modal-link" data-fancybox href="#login">Войти</a>
+		</form>
+	</div>
 
   </div>
 
