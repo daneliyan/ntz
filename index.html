@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Главная</title>
+
+	<!-- favicons -->
+<link rel="apple-touch-icon" sizes="57x57" href="img/favicon.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/favicon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/favicon.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/favicon.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/favicon.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/favicon.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/favicon.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="img/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+<link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+<link rel="icon" href="img/favicon.png" type="image/x-icon">
+<meta name="msapplication-tilecolor" content="#fff">
+<meta name="msapplication-tileimage" content="img/favicon.png">
+<meta name="theme-color" content="#ff3331">
+
+<!-- CSS -->
+<!-- SWIPER -->
+<link href="css/swiper-bundle.min.css" rel="stylesheet">
+<!-- CHOICES -->
+<!-- <link rel="stylesheet" href="css/choices.min.css"> -->
+<link href="css/style.min.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<!-- header -->
+<header class="header">
+	<div class="container header__container">
+		<a href="index.html" class="logo"><img src="img/logo.png" width="280" height="94" alt="logo"></a>
+		<div class="header-box">
+			<div class="header-top">
+				<nav class="nav" id="nav-menu">
+					<ul class="nav__list">
+						<li><a href="dostavka.html">Доставка</a></li>
+						<li><a href="oplata.html">Оплата</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+					<div class="nav__close" id="nav-close">
+						<i class="icomoon icon-remove"></i>
+					</div>
+				</nav>
+				<div class="header-top__contacts">
+					<a href="tel:+73435299355" class="phone">+7 (3435) 299-355</a>
+					<a href="mailto:mail@ntzmk.ru" class="link"><img src="img/mail.svg" alt="">mail@ntzmk.ru</a>
+				</div>
+			</div>
+			<div class="header-bot">
+				<form action="" class="searchform">
+					<label for="search-bar" class="form-label">
+						<input type="search" class="form-input" id="search-bar" placeholder="Поиск по сайту">
+						<button type="submit"><i class="icomoon icon-search"></i></button>
+					</label>
+				</form>
+				<a data-fancybox href="#login" class="btn-second">Вход<i class="icomoon icon-login"></i></a>
+				<a href="cart.html" class="btn-second">Корзина<i class="icomoon icon-cart"></i></a>
+			</div>
+		</div>
+		<!-- Toggle button -->
+		<div class="nav__toggle" id="nav-toggle">
+			<i class="icomoon icon-menu"></i>
+		</div>
+	</div>
+	<ul class="container header__cats">
+		<li><a href="catalog.html">Арматура</a></li>
+		<li><a href="catalog.html">Плоский прокат</a></li>
+		<li><a href="catalog.html">Трубы</a></li>
+		<li><a href="catalog.html">Сваи</a></li>
+		<li><a href="catalog.html">Метизы</a></li>
+		<li>
+			<a href="catalog.html">Попутная продукция<i class="icomoon icon-chevron-down"></i></a>
+			<ul class="header__cats-dropdown">
+				<li><a href="#">Склад металла</a></li>
+				<li><a href="#">Цех подготовки полуфабрикатов</a></li>
+				<li><a href="#">Цех металлоконструкций</a></li>
+				<li>
+					<a href="#">Цех маляро-погрузки<i class="icomoon icon-chevron-down"></i></a>
+					<ul class="header__cats-dropdown-second">
+						<li><a href="#">Погрузка</a></li>
+						<li><a href="#">Маляро-погрузки</a></li>
+						<li><a href="#">Цены</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Металлообработка<i class="icomoon icon-chevron-down"></i></a>
+					<ul class="header__cats-dropdown-second">
+						<li><a href="#">Погрузка</a></li>
+						<li><a href="#">Маляро-погрузки</a></li>
+						<li><a href="#">Цены</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="catalog.html">Фасон<i class="icomoon icon-chevron-down"></i></a>
+			<ul class="header__cats-dropdown">
+				<li><a href="#">Цех подготовки полуфабрикатов</a></li>
+				<li><a href="#">Цех металлоконструкций</a></li>
+			</ul>
+		</li>
+		<li><a href="catalog.html">Сорт</a></li>
+		<li><a href="catalog.html">Сыпучие продукты и удобрения</a></li>
+		<li><a href="catalog.html">Фанера</a></li>
+	</ul>
+</header>
+
+		<main class="page-home">
+
+			<div class="main">
+  <div class="container">
+    <div class="main__container">
+      <div class="col">
+        <div class="catbar">
+          <div class="section-title">Каталог</div>
+          <div id="catTabs">
+            <!-- Кнопки -->
+            <ul class="tabs-nav">
+              <li><a href="#tabVnalichii">В наличии</a></li>
+              <li><a href="#tabPodzakaz">Под заказ</a></li>
+            </ul>
+            <!-- Контент -->
+            <div class="tabs-items">
+              <div class="tabs-item" id="tabVnalichii">
+                <div class="accordion">
+                  <div class="accordion-item">
+                    <div class="accordion-header">
+                      <div class="accordion-title"><h3>Сортовой прокат</h3></div>
+                      <div class="accordion-icon"><i class="icomoon icon-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-content">
+                      <ul class="cats-list">
+                        <li><a href="#">Круг нержавеющий</a></li>
+                        <li><a href="#">Лента нержавеющая</a></li>
+                        <li><a href="#">Лист нержавеющий</a></li>
+                        <li><a href="#">Полоса нержавеющая</a></li>
+                        <li><a href="#">Проволока нержавеющая</a></li>
+                        <li><a href="#">Рулон нержавеющий</a></li>
+                        <li><a href="#">Труба нержавеющая</a></li>
+                        <li><a href="#">Уголок нержавеющий</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-header">
+                      <div class="accordion-title"><h3>Фасонный прокат</h3></div>
+                      <div class="accordion-icon"><i class="icomoon icon-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-content">
+                      <ul class="cats-list">
+                        <li><a href="#">Круг нержавеющий</a></li>
+                        <li><a href="#">Лента нержавеющая</a></li>
+                        <li><a href="#">Лист нержавеющий</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-header">
+                      <div class="accordion-title"><h3>Листовой Прокат</h3></div>
+                      <div class="accordion-icon"><i class="icomoon icon-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-content">
+                      <ul class="cats-list">
+                        <li><a href="#">Рулон нержавеющий</a></li>
+                        <li><a href="#">Труба нержавеющая</a></li>
+                        <li><a href="#">Уголок нержавеющий</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-header">
+                      <div class="accordion-title"><h3>Трубный прокат</h3></div>
+                      <div class="accordion-icon"><i class="icomoon icon-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-content">
+                      <ul class="cats-list">
+                        <li><a href="#">Круг нержавеющий</a></li>
+                        <li><a href="#">Лента нержавеющая</a></li>
+                        <li><a href="#">Лист нержавеющий</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-header">
+                      <div class="accordion-title"><h3>Сетки</h3></div>
+                      <div class="accordion-icon"><i class="icomoon icon-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-content">
+                      <ul class="cats-list">
+                        <li><a href="#">Рулон нержавеющий</a></li>
+                        <li><a href="#">Труба нержавеющая</a></li>
+                        <li><a href="#">Уголок нержавеющий</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-header">
+                      <div class="accordion-title"><h3>Нержавеющий прокат</h3></div>
+                      <div class="accordion-icon"><i class="icomoon icon-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-content">
+                      <ul class="cats-list">
+                        <li><a href="#">Круг нержавеющий</a></li>
+                        <li><a href="#">Лента нержавеющая</a></li>
+                        <li><a href="#">Лист нержавеющий</a></li>
+                        <li><a href="#">Полоса нержавеющая</a></li>
+                        <li><a href="#">Проволока нержавеющая</a></li>
+                        <li><a href="#">Рулон нержавеющий</a></li>
+                        <li><a href="#">Труба нержавеющая</a></li>
+                        <li><a href="#">Уголок нержавеющий</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="files-group">
+                  <div class="file-item">
+                    <img src="img/pdf.svg" width="34" height="34" alt="">
+                    <div class="file-info">
+                      <h4>Каталог всей продукции</h4>
+                      <a href="#" class="link" download>Скачать</a>
+                    </div>
+                  </div>
+                  <div class="file-item">
+                    <img src="img/zip.svg" width="34" height="34" alt="">
+                    <div class="file-info">
+                      <h4>Прайс-лист продукции в наличии</h4>
+                      <a href="#" class="link" download>Скачать 9 Мб</a>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="btn">Быстрый заказ</a>
+              </div>
+              <div class="tabs-item" id="tabPodzakaz">
+                <strong>Текст вкладки №2</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="section">
+          <h2 class="section-title">Спецпредложения</h2>
+          <div class="special__container">
+            <!-- Swiper -->
+            <div class="swiper specialSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="special-item">
+                    <h1 class="section-title">Промышленные здания и сооружения</h1>
+                    <p>Крупные сооружения, построенные из массивных деталей стального каркаса и включающие в себя производственные линии</p>
+                    <a href="#" class="btn-third">Подробнее<div class="btn-icon"><i class="icomoon icon-chevron-right"></i></div></a>
+                    <img src="img/special-img.jpg" class="special-img" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="special-item">
+                    <h1 class="section-title">Заголовок второго слайда</h1>
+                    <p>Крупные сооружения, построенные из массивных деталей стального каркаса и включающие в себя производственные линии</p>
+                    <a href="#" class="btn-third">Подробнее<div class="btn-icon"><i class="icomoon icon-chevron-right"></i></div></a>
+                    <img src="img/special-img.jpg" class="special-img" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="special-item">
+                    <h1 class="section-title">Более длинный заголовок, но уже для третьего слайда</h1>
+                    <p>Крупные сооружения, построенные из массивных деталей стального каркаса и включающие в себя производственные линии</p>
+                    <a href="#" class="btn-third">Подробнее<div class="btn-icon"><i class="icomoon icon-chevron-right"></i></div></a>
+                    <img src="img/special-img.jpg" class="special-img" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="special-item">
+                    <h1 class="section-title">Слайд, если у него не будет картинки</h1>
+                    <p>Крупные сооружения, построенные из массивных деталей стального каркаса и включающие в себя производственные линии</p>
+                    <a href="#" class="btn-third">Подробнее<div class="btn-icon"><i class="icomoon icon-chevron-right"></i></div></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <div class="special-grid">
+              <a href="#" class="special-link">
+                <img src="img/special-bnr.jpg" alt="">
+              </a>
+              <a href="#" class="special-link">
+                <img src="img/special-bnr.jpg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="heading-nav">
+            <div class="heading">
+              <h2 class="section-title">Хиты продаж</h2>
+            </div>
+          </div>
+          <div class="standart-grid">
+            <a href="product.html" class="card">
+              <div class="card-img"><img src="img/product-img.jpg" alt="Арматура в прутках разные сплавы"></div>
+              <div class="card-info">
+                <p class="card-detals"><span>А500С </span><span>11700</span></p>
+                <h3 class="card-name">Арматура в прутках разные сплавы</h3>
+              </div>
+              <div class="card-nav">
+                <p class="card-price">56.890 ₽/т</p>
+                <button class="btn-icon" type="submit"><i class="icomoon icon-cart"></i></button>
+              </div>
+            </a>
+            <a href="product.html" class="card">
+              <div class="card-img"><img src="img/product-img.jpg" alt="Арматура в прутках разные сплавы"></div>
+              <div class="card-info">
+                <p class="card-detals"><span>А500С </span><span>11700</span></p>
+                <h3 class="card-name">Арматура в прутках разные сплавы</h3>
+              </div>
+              <div class="card-nav">
+                <p class="card-price">56.890 ₽/т</p>
+                <button class="btn-icon"><i class="icomoon icon-cart"></i></button>
+              </div>
+            </a>
+            <a href="product.html" class="card">
+              <div class="card-img"><img src="img/product-img.jpg" alt="Арматура в прутках разные сплавы"></div>
+              <div class="card-info">
+                <p class="card-detals"><span>А500С </span><span>11700</span></p>
+                <h3 class="card-name">Арматура</h3>
+              </div>
+              <div class="card-nav">
+                <p class="card-price">56.890 ₽/т</p>
+                <button class="btn-icon"><i class="icomoon icon-cart"></i></button>
+              </div>
+            </a>
+            <a href="product.html" class="card">
+              <div class="card-img"><img src="img/product-img.jpg" alt="Арматура в прутках разные сплавы"></div>
+              <div class="card-info">
+                <p class="card-detals"><span>А500С </span><span>11700</span></p>
+                <h3 class="card-name">Арматура в прутках разные сплавы</h3>
+              </div>
+              <div class="card-nav">
+                <p class="card-price">56.890 ₽/т</p>
+                <button class="btn-icon"><i class="icomoon icon-cart"></i></button>
+              </div>
+            </a>
+            <a href="product.html" class="card">
+              <div class="card-img"><img src="img/product-img.jpg" alt="Арматура в прутках разные сплавы"></div>
+              <div class="card-info">
+                <p class="card-detals"><span>А500С </span><span>11700</span></p>
+                <h3 class="card-name">Арматура в прутках разные сплавы</h3>
+              </div>
+              <div class="card-nav">
+                <p class="card-price">56.890 ₽/т</p>
+                <button class="btn-icon"><i class="icomoon icon-cart"></i></button>
+              </div>
+            </a>
+            <a href="product.html" class="card">
+              <div class="card-img"><img src="img/product-img.jpg" alt="Арматура в прутках разные сплавы"></div>
+              <div class="card-info">
+                <p class="card-detals"><span>А500С </span><span>11700</span></p>
+                <h3 class="card-name">Арматура в прутках разные сплавы</h3>
+              </div>
+              <div class="card-nav">
+                <p class="card-price">56.890 ₽/т</p>
+                <button class="btn-icon"><i class="icomoon icon-cart"></i></button>
+              </div>
+            </a>
+            <a href="product.html" class="card">
+              <div class="card-img"><img src="img/product-img.jpg" alt="Арматура в прутках разные сплавы"></div>
+              <div class="card-info">
+                <p class="card-detals"><span>А500С </span><span>11700</span></p>
+                <h3 class="card-name">Арматура в прутках разные сплавы</h3>
+              </div>
+              <div class="card-nav">
+                <p class="card-price">56.890 ₽/т</p>
+                <button class="btn-icon"><i class="icomoon icon-cart"></i></button>
+              </div>
+            </a>
+            <a href="product.html" class="card">
+              <div class="card-img"><img src="img/product-img.jpg" alt="Арматура в прутках разные сплавы"></div>
+              <div class="card-info">
+                <p class="card-detals"><span>А500С </span><span>11700</span></p>
+                <h3 class="card-name">Арматура в прутках разные сплавы</h3>
+              </div>
+              <div class="card-nav">
+                <p class="card-price">56.890 ₽/т</p>
+                <button class="btn-icon"><i class="icomoon icon-cart"></i></button>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="section">
+          <div class="heading-nav">
+            <div class="heading">
+              <h2 class="section-title">Лучшие предложения</h2>
+            </div>
+            <a href="catalog.html" class="second-link">Смотреть все<i class="icomoon icon-chevron-right"></i></a>
+          </div>
+          <div class="standart-grid">
+            <a href="product.html" class="card">
+              <div class="card-img"><img src="img/product-img.jpg" alt="Арматура в прутках разные сплавы"></div>
+              <div class="card-info">
+                <p class="card-detals"><span>А500С </span><span>11700</span></p>
+                <h3 class="card-name">Арматура в прутках разные сплавы</h3>
+              </div>
+              <div class="card-nav">
+                <p class="card-price">56.890 ₽/т</p>
+                <button class="btn-icon"><i class="icomoon icon-cart"></i></button>
+              </div>
+            </a>
+            <a href="product.html" class="card">
+              <div class="card-img"><img src="img/product-img.jpg" alt="Арматура в прутках разные сплавы"></div>
+              <div class="card-info">
+                <p class="card-detals"><span>А500С </span><span>11700</span></p>
+                <h3 class="card-name">Арматура в прутках разные сплавы</h3>
+              </div>
+              <div class="card-nav">
+                <p class="card-price">56.890 ₽/т</p>
+                <button class="btn-icon"><i class="icomoon icon-cart"></i></button>
+              </div>
+            </a>
+            <a href="product.html" class="card">
+              <div class="card-img"><img src="img/product-img.jpg" alt="Арматура в прутках разные сплавы"></div>
+              <div class="card-info">
+                <p class="card-detals"><span>А500С </span><span>11700</span></p>
+                <h3 class="card-name">Арматура</h3>
+              </div>
+              <div class="card-nav">
+                <p class="card-price">56.890 ₽/т</p>
+                <button class="btn-icon"><i class="icomoon icon-cart"></i></button>
+              </div>
+            </a>
+            <a href="product.html" class="card">
+              <div class="card-img"><img src="img/product-img.jpg" alt="Арматура в прутках разные сплавы"></div>
+              <div class="card-info">
+                <p class="card-detals"><span>А500С </span><span>11700</span></p>
+                <h3 class="card-name">Арматура в прутках разные сплавы</h3>
+              </div>
+              <div class="card-nav">
+                <p class="card-price">56.890 ₽/т</p>
+                <button class="btn-icon"><i class="icomoon icon-cart"></i></button>
+              </div>
+            </a>
+            <a href="product.html" class="card">
+              <div class="card-img"><img src="img/product-img.jpg" alt="Арматура в прутках разные сплавы"></div>
+              <div class="card-info">
+                <p class="card-detals"><span>А500С </span><span>11700</span></p>
+                <h3 class="card-name">Арматура в прутках разные сплавы</h3>
+              </div>
+              <div class="card-nav">
+                <p class="card-price">56.890 ₽/т</p>
+                <button class="btn-icon"><i class="icomoon icon-cart"></i></button>
+              </div>
+            </a>
+            <a href="product.html" class="card">
+              <div class="card-img"><img src="img/product-img.jpg" alt="Арматура в прутках разные сплавы"></div>
+              <div class="card-info">
+                <p class="card-detals"><span>А500С </span><span>11700</span></p>
+                <h3 class="card-name">Арматура в прутках разные сплавы</h3>
+              </div>
+              <div class="card-nav">
+                <p class="card-price">56.890 ₽/т</p>
+                <button class="btn-icon"><i class="icomoon icon-cart"></i></button>
+              </div>
+            </a>
+            <a href="product.html" class="card">
+              <div class="card-img"><img src="img/product-img.jpg" alt="Арматура в прутках разные сплавы"></div>
+              <div class="card-info">
+                <p class="card-detals"><span>А500С </span><span>11700</span></p>
+                <h3 class="card-name">Арматура в прутках разные сплавы</h3>
+              </div>
+              <div class="card-nav">
+                <p class="card-price">56.890 ₽/т</p>
+                <button class="btn-icon"><i class="icomoon icon-cart"></i></button>
+              </div>
+            </a>
+            <a href="product.html" class="card">
+              <div class="card-img"><img src="img/product-img.jpg" alt="Арматура в прутках разные сплавы"></div>
+              <div class="card-info">
+                <p class="card-detals"><span>А500С </span><span>11700</span></p>
+                <h3 class="card-name">Арматура в прутках разные сплавы</h3>
+              </div>
+              <div class="card-nav">
+                <p class="card-price">56.890 ₽/т</p>
+                <button class="btn-icon"><i class="icomoon icon-cart"></i></button>
+              </div>
+            </a>
+          </div>
+          <div class="link-center">
+            <a href="catalog.html" class="second-link mob-section-link">Смотреть все<i class="icomoon icon-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+			<section class="blog">
+  <div class="container">
+    <div class="heading-nav">
+      <div class="heading">
+        <h2 class="section-title">Новости</h2>
+      </div>
+      <a href="blog.html" class="second-link">Все новости<i class="icomoon icon-chevron-right"></i></a>
+    </div>
+    <div class="standart-grid">
+      <a href="article.html" class="blog-card">
+        <div class="date">15.10.2022</div>
+        <h3 class="blog-card-title">Горизонты и перспективы</h3>
+        <p class="blog-card-excerpt">
+          Производство и выполнение заказов остается неотъемлемой частью работы завода. Но не стоит забывать о создании
+          инструментов. Производство и выполнение заказов остается неотъемлемой частью работы и выполнение заказов остается неотъемлемой частью работы.
+        </p>
+      </a>
+      <a href="article.html" class="blog-card">
+        <div class="date">30.09.2022</div>
+        <h3 class="blog-card-title">80-летие НТЗМК</h3>
+        <p class="blog-card-excerpt">
+          80 лет — казалось бы, не так много, но и не мало! Нижнетагильский завод металлических конструкций за эти годы
+        </p>
+      </a>
+      <a href="article.html" class="blog-card">
+        <div class="date">01.03.2019</div>
+        <h3 class="blog-card-title">Крупные заказы для АО "ЕВРАЗ НТМК"</h3>
+        <p class="blog-card-excerpt">
+          Крупные заказы для АО "ЕВРАЗ НТМК" от 27.02.2019 г.
+        </p>
+      </a>
+      <a href="article.html" class="blog-card">
+        <div class="date">15.10.2018</div>
+        <h3 class="blog-card-title">Горизонты и новые перспективы</h3>
+        <p class="blog-card-excerpt">
+          Производство и выполнение заказов остается неотъемлемой частью работы завода. Но не стоит забывать о создании.
+        </p>
+      </a>
+    </div>
+  </div>
+</section>
+
+			<section class="about">
+  <div class="container">
+    <div class="about-wrapper">
+      <div class="about-left">
+        <h2 class="section-title">О заводе</h2>
+        <p>Нижнетагильский завод металлических конструкций является ведущим производителем строительных стальных металлоконструкций
+        промышленного, гражданского и специального назначения.</p>
+        <p>Большой опыт НТЗМК в разработке конструкторской, технологической документации, производстве металлических конструкций,
+        современное и уникальное оборудование позволяют производить продукцию, соответствующую самым высоким мировым стандартам
+        качества.</p>
+        <p>Система менеджмента качества НТЗМК сертифицирована Ассоциацией по сертификации «Русский Регистр» (регистрационные номера
+        сертификатов: № 23.0157.026, 23.0158.026).</p>
+      </div>
+      <div class="about-right">
+        <ul class="about-benefits">
+          <li>
+            <div class="icon"><img src="img/about-icon-01.svg" alt=""></div>
+            <h4>Работаем с 1941 года</h4>
+            <p>Работы в сфере создания и монтажа стальных конструкций любой сложности</p>
+          </li>
+          <li>
+            <div class="icon"><img src="img/about-icon-02.svg" alt=""></div>
+            <h4>Высокие возможности</h4>
+            <p>По производству металлоконструкций для строительства и реконструкции нестандартных сооружений</p>
+          </li>
+          <li>
+            <div class="icon"><img src="img/about-icon-03.svg" alt=""></div>
+            <h4>Конструкции любой сложности</h4>
+            <p>По различным проектам и строительным чертежам заказчиков в рекордные сроки</p>
+          </li>
+          <li>
+            <div class="icon"><img src="img/about-icon-04.svg" alt=""></div>
+            <h4>Доставка конструкций</h4>
+            <p>В любую точку России и ближнего зарубежья собственным автотранспортом и жд</p>
+          </li>
+          <li>
+            <div class="icon"><img src="img/about-icon-05.svg" alt=""></div>
+            <h4>Гарантия 5 лет</h4>
+            <p>На все наши готовые металлоизделия и работы по монтажу</p>
+          </li>
+          <li>
+            <div class="icon"><img src="img/about-icon-06.svg" alt=""></div>
+            <h4>Быстрый расчет проекта</h4>
+            <p>При получении готового проекта или техзадания мы направляем заказчику предложение в течение 1 недели</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+		</main>
+
+		<!--------Footer--------->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__container">
+      <div class="footer-group">
+        <h4>Покупателям</h4>
+        <ul class="footer-menu">
+          <li><a href="#">Быстрый заказ</a></li>
+          <li><a href="#">Упаковка и маркировка</a></li>
+          <li><a href="#">Доставка и самовывоз</a></li>
+          <li><a href="#">Как купить и оплатить</a></li>
+          <li><a href="#">Вопрос-ответ</a></li>
+          <li><a href="#">Документы</a></li>
+          <li><a href="#">Видео-инструкция</a></li>
+          <li><a href="#">Пользовательское соглашение</a></li>
+        </ul>
+      </div>
+      <div class="footer-group">
+        <h4>О компании</h4>
+        <ul class="footer-menu">
+          <li><a href="#">Пользовательское соглашение</a></li>
+          <li><a href="#">Ключевые факты</a></li>
+          <li><a href="#">Отзывы клиентов</a></li>
+          <li><a href="blog.html">Новости</a></li>
+        </ul>
+      </div>
+      <div class="footer-group">
+        <h4>Общие сведения</h4>
+        <ul class="footer-menu">
+          <li><a href="#">Общие контакты</a></li>
+          <li><a href="#">Обратная связь</a></li>
+          <li><a href="#">Для строительства и промышленного производства</a></li>
+          <li><a href="#">Склады</a></li>
+        </ul>
+      </div>
+      <div class="footer-group">
+        <h4>Контакты</h4>
+        <div class="footer-group__contact">
+          <span>Телефон</span>
+          <a href="tel:+73435299355">+7 (3435) 299-355</a>
+          <a href="tel:+73435299300">+7 (3435) 299-300</a>
+        </div>
+        <div class="footer-group__contact">
+          <span>Адрес</span>
+          <p>г. Нижний Тагил, ул.Шевченко, 10</p>
+        </div>
+        <div class="footer-group__contact">
+          <span>E-mail</span>
+          <a href="mailto:mail@ntzmk.ru">mail@ntzmk.ru</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer-left">
+        <p class="footer-copy">© 2011-2023 ООО «Нижнетагильский завод металлических конструкций»</p>
+        <a href="#">Политика конфиденциальности</a>
+      </div>
+      <div class="footer-madein">
+        <p>Сделано в</p>
+        <img src="img/webmolot.svg" width="97" height="56" alt="Webmolot">
+      </div>
+    </div>
+  </div>
+</footer>
+
+		<!--------Modal-------->
+
+	<div class="modal" id="added">
+		<div class="modal-title">Товар был успешно добавлен в вашу корзину</div>
+		<div class="modal-btns">
+			<a href="cart.html" class="btn">Просмотреть корзину</a>
+			<div class="modal-close" data-fancybox-close>Продолжить покупки</div>
+		</div>
+	</div>
+	
+	<div class="modal" id="login">
+		<div class="modal-title">Вход</div>
+		<form action="" method="get" class="form" id="formLogin">
+			<div class="form-group">
+				<div class="form-group-title">Email</div>
+				<label for="" class="form-label">
+					<input type="email" name="email" class="form-input" placeholder="Введите ваш Email" required>
+				</label>
+			</div>
+			<div class="form-group">
+				<div class="form-group-title">Пароль</div>
+				<label for="" class="form-label">
+					<input type="password" name="password" class="form-input" placeholder="Введите ваш пароль" required>
+				</label>
+				<a href="#" class="link">Забыл пароль</a>
+			</div>
+			<button class="btn" type="submit">Войти</button>
+			<a class="modal-link" data-fancybox href="#registr">Регистрация</a>
+		</form>
+	</div>
+	
+	<div class="modal" id="registr">
+		<div class="modal-title">Регистрация</div>
+		<form action="" method="get" class="form" id="formRegistr">
+			<div class="form-group">
+				<div class="form-group-title">Ваше имя</div>
+				<label for="" class="form-label">
+					<input type="text" name="name" class="form-input" placeholder="Введите ваше имя" required>
+				</label>
+			</div>
+			<div class="form-group">
+				<div class="form-group-title">Email</div>
+				<label for="" class="form-label">
+					<input type="email" name="email" class="form-input" placeholder="Введите ваш Email" required>
+				</label>
+			</div>
+			<div class="form-group">
+				<div class="form-group-title">Пароль</div>
+				<label for="" class="form-label">
+					<input type="password" name="password" class="form-input" placeholder="Введите ваш пароль" required>
+				</label>
+			</div>
+			<div class="form-group">
+				<div class="form-group-title">Повторите пароль</div>
+				<label for="" class="form-label">
+					<input type="password" name="passwordRepeat" class="form-input" placeholder="Повторите ваш пароль" required>
+				</label>
+			</div>
+			<button class="btn" type="submit">Зарегистрироваться</button>
+			<a class="modal-link" data-fancybox href="#login">Войти</a>
+		</form>
+	</div>
+
+	</div>
+
+	<!-- Script-->
+<link href="css/fancybox.css" rel="stylesheet">
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<!-- Swiper JS -->
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<!-- <script src="js/choices.min.js"></script> -->
+<script src="js/app.min.js"></script>
+
+</body>
+
+</html>
